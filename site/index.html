@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../site/css/style.css">
+        <script type="text/javascript">
+    window.onload = function(){
+    document.querySelector(".menuMobile" ).addEventListener("click", function(){
+       if(document.querySelector(".menu nav ul").style.display =="flex"){
+           document.querySelector(".menu nav ul").style.display = "none";
+       } else {
+           document.querySelector(".menu nav ul").style.display="flex";
+       }  
+    });
+};
+    </script>
+    
+    <title>FLEXBOX</title>
+</head>
+<body>
+ <header>
+ <div class="container">
+     <div class="logo">
+        <a href=""><img src="./images/logo.png" alt=""></a>
+     </div>
+     <div class="menu">   
+          <nav>
+              <div class="menuMobile"> <!-- Botão MOBILE, PARA O MENU-->
+                  <div class="mm_line"></div>
+                  <div class="mm_line"></div>
+                  <div class="mm_line"></div>
+               </div>
+      
+             <ul>
+                 <li class="active"> <a href="">HOME</a></li>
+                 <li> <a href="">BLOG</a></li>
+                 <li> <a href="">PÁGINAS</a></li>
+                 <li> <a href="">DEPARTAMENTOS</a></li>
+                 <li> <a href="">AGENDAMENTOS</a></li>
+                 <li> <a href="">TELEFONES</a></li>
+                 
+             </ul>
+         </nav>
+     </div>
+ </div>
+ </header>
+  
+ <section id="banner">
+    <div class="container coluna" >
+        <div class="bannerheadline">
+
+        <h1> A SUA MELHOR EXPERIÊNCIA </h1>
+        <h2> CENTRO MÉDICO COM RESPOSABILIDADE </h2>
+
+        </div>
+        <div class="banneroption">
+        <div class="banner1">
+            <div class="banner_title"> NOSSOS MÉDICOS</div>
+            <div class="banner_desc"> Alguem texto qualquer </div>
+            <a href=""> Veja mais</a>
+        </div>
+        <div class="banner2"> 
+               <div class="banner_title"> EMERGÊNCIA </div>
+               <div class="banner_desc"> Algum texto qualquer </div>
+               <a href=""> Veja mais</a>
+            </div>
+        <div class="banner3"> 
+            <div class="banner_title"> NOSSOS HORÁRIOS</div>
+            <div class="banner_desc"> Algum texto qualquer </div>
+            <div class="open"> Mondey - Friday &nbsp;&nbsp;&nbsp; <b>07:00 - 18:00  </b></div>
+            <div class="open"> Saturday &nbsp;&nbsp;&nbsp; <b>08:00 - 18:00  </b></div>
+            <div class="open">Sunday &nbsp;&nbsp;&nbsp; <b>09:30 - 18:00  </b></div>
+        </div>
+        </div>
+    </div>
+
+ </section>
+ <section id="geral">
+     <div class="container">
+         <section>
+            <div class="widget">
+                <div class="widget_title">
+                    <div class="wiget_title_text"> <strong>Últimas nóticias </strong> </div>
+                    <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body flex"> <!-- Nessa div temos duas classes, a flex foi criada no css para deixar as nossas nóticias flex-->
+                    <article>  <a href="">
+                        <div class="news_data">
+                            <div class="news_posted_at">26 MAR 21</div>
+                         <div class="news_coments">
+                         5
+                        </div>
+                        </div>
+                        <div class="newws_thumball">
+                            <img src="./images/dr.jpg" alt="">
+                        </div>
+                        <div class="news_title"> Os melhores atendimentos. </div>
+                        <div class="news_resume"> Nossos médicos possuem as melhores referências, temos especialistas em diversas áreas <br>
+                        para o seu atendimento. </div></a>
+                      </article>
+                      <article>  <a href="">
+                        <div class="news_data">
+                            <div class="news_posted_at">26 MAR 21</div>
+                         <div class="news_coments">
+                         5
+                        </div>
+                        </div>
+                        <div class="newws_thumball">
+                            <img src="./images/dr.jpg" alt="">
+                        </div>
+                        <div class="news_title"> Os melhores atendimentos. </div>
+                        <div class="news_resume"> Nossos médicos possuem as melhores referências, temos especialistas em diversas áreas <br>
+                        para o seu atendimento.
+                        Para se tornar um médico, é preciso cursar um bacharelado em Medicina, durante, no mínimo, seis anos. O profissional também precisa se registrar no Conselho de Medicina do seu estado. <br> Durante esse período, a grade curricular é dividida nos ciclos básico, clínico e internato. 
+                        Para se tornar um médico, é preciso cursar um bacharelado em Medicina, durante, no mínimo, seis anos. O profissional também precisa se registrar no Conselho de Medicina do seu estado. <br> Durante esse período, a grade curricular é dividida nos ciclos básico, clínico e internato.
+                        </div></a>
+                      </article>
+                      <article>  <a href="">
+                        <div class="news_data">
+                            <div class="news_posted_at">26 MAR 21</div>
+                         <div class="news_coments">
+                         5
+                        </div>
+                        </div>
+                        <div class="newws_thumball">
+                            <img src="./images/dr.jpg" alt="">
+                        </div>
+                        <div class="news_title"> Os melhores atendimentos. </div>
+                        <div class="news_resume"> Nossos médicos possuem as melhores referências, temos especialistas em diversas áreas <br>
+                        para o seu atendimento. </div></a>
+                      </article>
+                      <article>  <a href="">
+                        <div class="news_data">
+                            <div class="news_posted_at">26 MAR 21</div>
+                         <div class="news_coments">
+                         5
+                        </div>
+                        </div>
+                        <div class="newws_thumball">
+                            <img src="./images/dr.jpg" alt="">
+                        </div>
+                        <div class="news_title"> Os melhores atendimentos. </div>
+                        <div class="news_resume"> Nossos médicos possuem as melhores referências, temos especialistas em diversas áreas <br>
+                        para o seu atendimento. </div></a>
+                    </article>
+                </div>
+            </div>
+           ...
+         </section>
+         <aside>
+               <div class="widget">
+                   <div class="widget_title">
+                       <div class="wiget_title_text"> <strong>Departamentos </strong> </div>
+                       <div class="widget_title_bar"></div>
+                   </div>
+                   <div class="widget_body">
+                       ...
+                   </div>
+               </div>
+               <div class="widget">
+                <div class="widget_title">
+                    <div class="wiget_title_text"> <strong>Nossos apoiadores </strong> </div>
+                    <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body">
+                
+                </div>
+            </div>
+         </aside>
+     </div>
+
+ </section>
+ <footer>
+     <div class="container flexcolumn">
+          <div class="footer_menu">
+              <div class="fm_1">
+                  PREÇOS
+              </div>
+              <div class="fm_2">
+                ACESSOS
+               </div>
+               <div class="fm_3">
+                PROFISSIONAIS
+               </div>
+          </div> 
+         
+         <div class="footer_area">
+             <div class="footer_areaitem">
+                 <div class="widget">
+                    <div class="widget_title">
+                        <div class="wiget_title_text"> <strong>Centro Médico</strong> </div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        SEDE CENTRO  <br>
+                        SEDE MESSEJANA
+                    </div>
+                 </div>
+             </div>
+
+             <div class="footer_areaitem"> 
+                  <div class="widget">
+                    <div class="widget_title">
+                        <div class="wiget_title_text"> <strong>CONTATOS</strong> </div>
+                        <div class="widget_title_bar">
+                          <img src="../telefone-celular.png" alt="" width="95">
+                        </div>
+                    </div>
+                    <div class="widget_body">
+                        
+                    </div>
+                  </div>
+              </div>
+
+              <div class="footer_areaitem">
+                 <div class="widget">
+                     <div class="widget_title">
+                        <div class="wiget_title_text"> <strong>Centro Médico</strong> </div>
+                        <div class="widget_title_bar"></div>
+                     </div>
+                     <div class="widget_body">
+                        ...
+                     </div>
+                 </div>
+              </div>
+           </div>
+
+           <div class="footer_copy">
+                &copy;Stephane Menezes <br>
+                Whatsapp: 85 98851-7693
+           </div>
+      </div>
+    </footer>
+</body>
+</html>
